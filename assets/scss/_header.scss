@@ -1,0 +1,37 @@
+#carouselInicioSlidesOnly{
+    margin-top: 75px;
+    max-height: 850px;
+    overflow: hidden;
+}
+
+.horarios{
+    background-color: $colorPrimario;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    h2{
+    margin-top: 3px;
+    font-size: 15px;
+    color: $colorPrimarioTextos;
+    }
+    h3{
+    font-size: 11px;
+    color: $colorPrimarioTextos;
+    }
+}
+
+.horarios438px{
+    background-color: $colorPrimario;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3{
+    font-size: 12px;
+    color: $colorPrimarioTextos;
+    }
+}
