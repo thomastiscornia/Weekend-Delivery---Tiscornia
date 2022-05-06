@@ -1,3 +1,30 @@
+.info {
+    height: 500px;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    grid-template-areas: 
+      "info_texto"
+      "info_imagen"; 
+      
+    .info_imagen{
+        background-image: url(../img/PerfilV2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        border-top: white;
+        border-style: dashed;
+    }
+    .info_texto{
+        display: flex;
+        align-items: center;
+        color: $colorPrimarioTextos;
+        text-align: center;
+        margin-top: 5px;
+    }
+}
+
 #carouselInicioSlidesOnly{
     margin-top: 75px;
     max-height: 850px;
