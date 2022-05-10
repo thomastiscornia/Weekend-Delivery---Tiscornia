@@ -1,299 +1,403 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-body{
-    background-color: #212529;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-
-/* -----CARRUSEL----- */
-#carouselInicioSlidesOnly{
-    margin-top: 75px;
-    max-height: 850px;
-    overflow: hidden;
+body {
+  background-color: #212529;
 }
 
-
-/* -----HORARIOS----- */
-.horarios{
-    background-color: #212529;
-    width: 100%;
-    height: 60px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.horarios h2{
-    margin-top: 3px;
-    font-size: 15px;
-    color: white;
-}
-.horarios h3{
-    font-size: 11px;
-    color: white;
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-
-.horarios438px{
-    background-color: #212529;
-    width: 100%;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.horarios438px h3{
-    font-size: 12px;
-    color: white;
+/* -----------INICIO----------- */
+.nav-link {
+  color: white !important;
 }
 
-
-/* -----TUTORIAL----- */
-.tutorial_pregunta{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 10px;
-    margin-top: 10px;
+#carouselInicioSlidesOnly {
+  margin-top: 75px;
+  max-height: 600px;
+  overflow: hidden;
 }
 
-
-.pasos {  display: grid;
-    margin-top: 50px;
-    justify-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-auto-columns: 1fr;
-    gap: 50px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "tutorial_paso1"
-      "tutorial_paso2"
-      "tutorial_paso3";
-}
-.tutorial_paso1{
-    grid-area: "tutorial_paso1";
-    position: relative;
-    display: flex;
-    text-align: center;
-    justify-items: center;
-    align-items: center;
-}
-.textos_paso1{
-    position: absolute;
-    color: rgb(0, 0, 0);
+.horarios {
+  background-color: #212529;
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.tutorial_paso2{
-    grid-area: "tutorial_paso2";
-    position: relative;
-    display: flex;
-    text-align: center;
-    justify-items: center;
-    align-items: center;
-}
-.textos_paso2{
-    position: absolute;
-    color: rgb(0, 0, 0);
+.horarios h2 {
+  margin-top: 3px;
+  font-size: 15px;
+  color: white;
 }
 
-.tutorial_paso3{
-    grid-area: "tutorial_paso3";
-    position: relative;
-    display: flex;
-    text-align: center;
-    justify-items: center;
-    align-items: center;
-}
-.textos_paso3{
-    position: absolute;
-    color: rgb(0, 0, 0);
+.horarios h3 {
+  font-size: 11px;
+  color: white;
 }
 
-
-.pasos span{
-    font-weight: 600;
+.horarios438px {
+  background-color: #212529;
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
+.horarios438px h3 {
+  font-size: 12px;
+  color: white;
+}
 
-/* -----INFO + IMAGEN----- */
+.tutorial_pregunta {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.pasos {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: row;
+      grid-template-areas: "tutorial_paso1" "tutorial_paso2" "tutorial_paso3";
+}
+
+.pasos .tutorial_paso1, .pasos .tutorial_paso2, .pasos .tutorial_paso3 {
+  grid-area: "tutorial_paso1";
+  position: relative;
+}
+
+.pasos .tutorial_paso2 {
+  grid-area: "tutorial_paso2";
+}
+
+.pasos .tutorial_paso3 {
+  grid-area: "tutorial_paso3";
+}
+
+.pasos span {
+  font-weight: 600;
+}
+
+.pasos .card {
+  position: relative;
+  min-width: 320px;
+  height: 350px;
+  background-color: #212529;
+  border: 0;
+}
+
+.pasos .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #2a2b2f;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.pasos .card .box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.pasos .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+.pasos .card .box .content h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.pasos .card .box .content h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-bottom: 15px;
+}
+
+.pasos .card .box .content p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .info {
-    height: 500px;
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr; 
-    grid-template-rows: 1fr 1fr; 
-    grid-template-areas: 
-      "info_texto"
-      "info_imagen"; 
+  height: 500px;
+  background-color: #313236;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "info_texto" "info_imagen";
 }
 
-
-.info_imagen{
-    background-image: url(../img/PerfilV2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    border-top: white;
-    border-style: dashed;
+.info .info_imagen {
+  grid-area: "info_imagen";
 }
-.info_texto{
+
+.info .info_imagen img {
+  width: 100%;
+}
+
+.info .info_texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  text-align: center;
+  grid-area: "info_texto";
+}
+
+.features {
+  height: 1200px;
+}
+
+/* -----------CATALOGO----------- */
+.catalogo_titulo {
+  margin-top: 100px;
+}
+
+/* -----------NOSOTROS----------- */
+.nosotros_texto {
+  text-align: center;
+}
+
+/* -----------CONTACTO----------- */
+.formulario {
+  margin-top: 100px;
+}
+
+/* -----------VARIOS----------- */
+.separador {
+  background-color: white;
+  height: 3px;
+}
+
+.separador1 {
+  background-color: white;
+  height: 3px;
+  margin-top: 10px;
+}
+
+/* -----------FOOTER----------- */
+footer {
+  background-color: #212529;
+  height: 150px;
+  width: 100%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .redes ul li {
+  display: inline-block;
+  margin: 0 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+footer .redes ul li .facebook:hover {
+  color: #3b5999;
+}
+
+footer .redes ul li .twitter:hover {
+  color: #55acee;
+}
+
+footer .redes ul li .instagram:hover {
+  color: #e4405f;
+}
+
+footer .redes ul li .youtube:hover {
+  color: #bd081c;
+}
+
+footer .redes ul li a {
+  display: block;
+  padding: 0 10px;
+  color: white;
+  line-height: 50px;
+  font-size: 18px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+footer .redes ul li a:hover {
+  -webkit-transform: translateY(-3px) scale(1.05);
+          transform: translateY(-3px) scale(1.05);
+  -webkit-filter: none;
+          filter: none;
+}
+
+/* -----------RESPONSIVE----------- */
+@media (max-width: 428px) {
+  .horarios438px {
+    display: none;
+  }
+}
+
+@media (min-width: 428px) {
+  .horarios {
+    display: none;
+  }
+  .horarios438px {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    color: white;
-    text-align: center;
-    margin-top: 5px;
+  }
+  .tutorial_pasos img {
+    width: 390px;
+  }
 }
 
-
-/* -----FOOTER----- */
-footer{
-    background-color: #212529;
-    height: 150px;
-    width: 100%;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+@media (min-width: 768px) {
+  .horarios438px h3 {
+    font-size: 16px;
+  }
+  footer {
+    height: 100px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer_textos {
+    margin-left: 15px;
+  }
+  .features {
+    height: 450px;
+  }
 }
 
-.footer_textos{
-    margin-top: 5px;
-    text-align: center;
-}
-
-
-ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.redes ul li{
-    display: inline-block;
-    margin: 0 5px;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-}
-.redes ul li a{
-    display: block;
-    padding: 0 10px;
-    color: white;
-    line-height: 50px;
-    font-size: 18px;
-    transition: .2s;
-}
-
-
-.redes ul:hover a{
-    filter: blur(2px);
-}
-.redes ul li a:hover{
-    transform: translateY(-3px) scale(1.05);
-    filter: none;
-}
-.redes ul li .facebook:hover{
-    color: var(--facebook);
-}
-.redes ul li .twitter:hover{
-    color: var(--twitter);
-}
-.redes ul li .instagram:hover{
-    color: var(--instagram);
-}
-.redes ul li .youtube:hover{
-    color: var(--youtube);
-}
-
-
-:root{
-    --facebook: #3b5999;
-    --instagram: #e4405f;
-    --twitter: #55acee;
-    --youtube: #bd081c;
-}
-
-/* -----ESPECIFICACIONES----- */
-.catalogo_titulo{
-    margin-top: 100px;
-}
-.nosotros_texto{
-    text-align: center;
-}
-.formulario{
-    margin-top: 100px;
-}
-
-
-/* -----RESPONSIVE----- */
-@media (max-width: 428px){
-    .horarios438px{
-        display: none;
-    }
-}
-@media (min-width: 428px){
-    .horarios{
-        display: none;
-    }
-    .horarios438px{
-        display: flex;
-    }
-    .tutorial_pasos img{
-        width: 390px;
-    }
-}
-@media (min-width: 768px){
-    .horarios438px h3{
-        font-size: 16px;
-    }
-    footer{
-        height: 100px;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .footer_textos{
-        margin-left: 15px;
-    }
-}
-@media (min-width: 1024px){
-    .pasos{ 
-        display: grid;
+@media (min-width: 1024px) {
+  .pasos {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
-        grid-auto-columns: 1fr;
-        gap: 0px 30px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "tutorial_paso1 tutorial_paso2 tutorial_paso3";
-    }
-    .info{
-        display: grid; 
-        grid-auto-columns: 1fr; 
-        grid-template-columns: 1fr 1fr; 
-        grid-template-rows: 1fr; 
-        gap: 0px 30px; 
-        grid-template-areas: 
-        "info_texto info_imagen"; 
-    }
-    .info_imagen{
-        border-top: none;
-        border-left: white;
-        border-style: dashed;
-    }
+    grid-auto-columns: 1fr;
+    gap: 0px 30px;
+    grid-auto-flow: row;
+        grid-template-areas: "tutorial_paso1 tutorial_paso2 tutorial_paso3";
+  }
+  .info {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    gap: 0px 30px;
+        grid-template-areas: "info_texto info_imagen";
+  }
+  .info .img_normal {
+    display: none;
+  }
+  .info .img_diagonal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
-
-/* -----SEPARADORES----- */
-.separador{
-    background-color: white;
-    height: 3px;
+@media (max-width: 1023px) {
+  .info {
+    height: 1000px;
+  }
+  .info .img_normal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-top: 3px solid white;
+  }
+  .info .img_diagonal {
+    display: none;
+  }
 }
-.separador1{
-    background-color: white;
-    height: 3px;
-    margin-top: 10px;
-}
+/*# sourceMappingURL=style.css.map */
