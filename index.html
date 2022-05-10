@@ -7,8 +7,10 @@
     <title>Weekend Delivery</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="./assets/img/logo pequeño.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
+    
 </head>
 
 <body>
@@ -27,7 +29,7 @@
                 <a class="nav-link" href="#">Inicio</a>
             </li>
             <li class="nav-item p-2 menu_hover">
-                <a class="nav-link" href="./pages/catalogo.html">Catalogo</a>
+                <a class="nav-link" href="./pages/catalogo.html">Catálogo</a>
             </li>
             <li class="nav-item p-2 menu_hover">
                 <a class="nav-link" href="./pages/combos.html">Combos</a>
@@ -60,8 +62,8 @@
 <div class="separador"></div>
 
     <div class="horarios" >
-        <h2>Envios a domicilio</h2>
-        <h3>Pedi tus bebidas de Jueves a Domingo en cualquier horario</h3>
+        <h2>Envíos a domicilio</h2>
+        <h3>Pedí tus bebidas de Jueves a Domingo en cualquier horario</h3>
     </div>
 
     <div class="horarios438px" >
@@ -73,38 +75,38 @@
 </header>
 
 <main>
-    <div class="tutorial_pregunta mt-4">
+    <div class="tutorial_pregunta mt-4 wow animate__animated animate__zoomIn">
         <div class="tutorial_textos">
             <h2>¿Cómo comprar en Weekend Delivery?</h2>
-            <p> A continuacion le explicamos</p>
+            <p> A continuación le explicamos</p>
         </div>
     </div>
 
     <section class="pasos justify-content-center mb-5">
-            <div class="card tutorial_paso1">
+            <div class="card tutorial_paso1 wow animate__animated animate__zoomIn animate__delay-1s">
               <div class="box">
                 <div class="content">
                   <h2>01</h2>
-                  <h3>Ir al catalogo</h3>
+                  <h3>Ir al catálogo</h3>
                   <p>Una vez dentro, debes <span>seleccionar</span> los productos que quieras adquirir y enviarlos al carrito de compras.</p>
                 </div>
               </div>
             </div>
-            <div class="card tutorial_paso2">
+            <div class="card tutorial_paso2 wow animate__animated animate__zoomIn animate__delay-2s">
               <div class="box">
                 <div class="content">
                   <h2>02</h2>
                   <h3>Rellenar los datos</h3>
-                  <p>Dentro del carrito de compras, debes darle al boton de <span>pagar</span> y rellenar con los datos solicitados.</p>
+                  <p>Dentro del carrito de compras, debes darle al botón de <span>pagar</span> y rellenar con los datos solicitados.</p>
                 </div>
               </div>
             </div>
-            <div class="card tutorial_paso3">
+            <div class="card tutorial_paso3 wow animate__animated animate__zoomIn animate__delay-3s">
               <div class="box">
                 <div class="content">
                   <h2>03</h2>
-                  <h3>Metodos de pago</h3>
-                  <p>Luego debemos elegir el <span>metodo de pago</span> y realizar la transaccion. Ahora a esperar que llegue!</p>
+                  <h3>Métodos de pago</h3>
+                  <p>Luego debemos elegir el <span>método de pago</span> y realizar la transacción. ¡Ahora a esperar que llegue!</p>
                 </div>
               </div>
             </div>
@@ -114,17 +116,57 @@
 
     <section>
         <div class="info">
-            <div class="info_texto">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia praesentium deleniti aut nesciunt modi eius, magnam voluptates exercitationem laborum eaque!</p>
+            <div class="info_texto text-white fs-4 fst-italic ms-4 p-5">
+                <p>¿Querés pedir escabio para tomar con los pibes? Tu mejor opción en bebidas, precios y calidad. Pedí por delivery y te lo enviamos al instante. </p>
             </div>
 
-            <div class="info_imagen"> </div>
+            <div class="info_imagen"> 
+                <img src="./assets/img/ImagenEscabio.jpg" class="img_diagonal" width="768" height="500" alt="">
+                <img src="./assets/img/ImagenEscabioNormal.jpg" class="img_normal" width="768" height="500" alt="">
+            </div>
         </div>
     </section>
 
 <div class="separador"></div>
 
+<section class="features mt-5">
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mb-3">
+            <img src="./assets/img/features/Dedo.png" width="250px" class="img-thumbail img-fluid rounded mx-auto d-block" alt="">
+            <p class="text-white fs-4 fst-italic text-center">Método de compra sencillo, fácil y rápido</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mb-3">
+            <img src="./assets/img/features/Carrito.png" width="250px" class="img-thumbail img-fluid rounded mx-auto d-block" alt="">
+            <p class="text-white fs-4 fst-italic text-center">Pagá de la manera que quieras</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mb-3">
+            <img src="./assets/img/features/Botellas.png" width="250px" class="img-thumbail img-fluid rounded mx-auto d-block" alt="">
+            <p class="text-white fs-4 fst-italic text-center">Todo tipo de bebidas, precios accesibles para todos</p>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<div class="separador"></div>
+
+<section>
+    <div class="info">
+        <div class="info_texto text-white fs-4 fst-italic ms-4 p-5">
+            <p>¿Querés pedir escabio para tomar con los pibes? Tu mejor opción en bebidas, precios y calidad. Pedí por delivery y te lo enviamos al instante. </p>
+        </div>
+
+        <div class="info_imagen"> 
+            <img src="./assets/img/ImagenEscabio.jpg" class="img_diagonal" width="768" height="500" alt="">
+            <img src="./assets/img/ImagenEscabioNormal.jpg" class="img_normal" width="768" height="500" alt="">
+        </div>
+    </div>
+</section>
+
 </main>
+
+<div class="separador"></div>
 
 <footer>
     <div class="mt-2 ms-3 text-center">
@@ -141,6 +183,10 @@
     </div>
 </footer>
 
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="./assets/js/wow.min.js"></script> 
+<script> new WOW().init();</script>
 </body>
 </html>

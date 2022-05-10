@@ -2,12 +2,11 @@
     padding: 0;
     margin: 0;
 }
-@import "variables";
-@import "tutorial";
-@import "main";
-@import "footer";
-@import "responsive";
-
 body{
     background-color: #212529;
 }
+
+@import "variables";
+@import "main";
+@import "responsive";
+

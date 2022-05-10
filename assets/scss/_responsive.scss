@@ -1,3 +1,4 @@
+/* -----------RESPONSIVE----------- */
 @media (max-width: 428px){
     .horarios438px{
         display: none;
@@ -26,6 +27,9 @@
     .footer_textos{
         margin-left: 15px;
     }
+    .features{
+        height: 450px;
+    }
 }
 @media (min-width: 1024px){
     .pasos{ 
@@ -45,11 +49,24 @@
         grid-template-rows: 1fr; 
         gap: 0px 30px; 
         grid-template-areas: 
-        "info_texto info_imagen"; 
+        "info_texto info_imagen";
+        .img_normal{
+            display: none;
+        }
+        .img_diagonal{
+            display: flex;
+        }
     }
-    .info_imagen{
-        border-top: none;
-        border-left: white;
-        border-style: dashed;
+}
+@media (max-width: 1023px){
+    .info{
+        height: 1000px;
+    .img_normal{
+        display: flex;
+        border-top: 3px solid white;
     }
+    .img_diagonal{
+        display: none;
+    }
+}
 }

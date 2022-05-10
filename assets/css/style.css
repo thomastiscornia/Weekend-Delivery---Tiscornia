@@ -3,33 +3,72 @@
   margin: 0;
 }
 
+body {
+  background-color: #212529;
+}
+
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.catalogo_titulo {
-  margin-top: 100px;
+/* -----------INICIO----------- */
+.nav-link {
+  color: white !important;
 }
 
-.nosotros_texto {
-  text-align: center;
+#carouselInicioSlidesOnly {
+  margin-top: 75px;
+  max-height: 600px;
+  overflow: hidden;
 }
 
-.formulario {
-  margin-top: 100px;
+.horarios {
+  background-color: #212529;
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.separador {
-  background-color: white;
-  height: 3px;
+.horarios h2 {
+  margin-top: 3px;
+  font-size: 15px;
+  color: white;
 }
 
-.separador1 {
-  background-color: white;
-  height: 3px;
-  margin-top: 10px;
+.horarios h3 {
+  font-size: 11px;
+  color: white;
+}
+
+.horarios438px {
+  background-color: #212529;
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.horarios438px h3 {
+  font-size: 12px;
+  color: white;
 }
 
 .tutorial_pregunta {
@@ -147,6 +186,7 @@ ul {
 
 .info {
   height: 500px;
+  background-color: #313236;
   display: -ms-grid;
   display: grid;
   grid-auto-columns: 1fr;
@@ -158,12 +198,11 @@ ul {
 }
 
 .info .info_imagen {
-  background-image: url(../img/PerfilV2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  grid-area: "info_imagen";
+}
+
+.info .info_imagen img {
   width: 100%;
-  border-top: white;
-  border-style: dashed;
 }
 
 .info .info_texto {
@@ -175,62 +214,41 @@ ul {
           align-items: center;
   color: white;
   text-align: center;
-  margin-top: 5px;
+  grid-area: "info_texto";
 }
 
-#carouselInicioSlidesOnly {
-  margin-top: 75px;
-  max-height: 850px;
-  overflow: hidden;
+.features {
+  height: 1200px;
 }
 
-.horarios {
-  background-color: #212529;
-  width: 100%;
-  height: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+/* -----------CATALOGO----------- */
+.catalogo_titulo {
+  margin-top: 100px;
 }
 
-.horarios h2 {
-  margin-top: 3px;
-  font-size: 15px;
-  color: white;
+/* -----------NOSOTROS----------- */
+.nosotros_texto {
+  text-align: center;
 }
 
-.horarios h3 {
-  font-size: 11px;
-  color: white;
+/* -----------CONTACTO----------- */
+.formulario {
+  margin-top: 100px;
 }
 
-.horarios438px {
-  background-color: #212529;
-  width: 100%;
-  height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+/* -----------VARIOS----------- */
+.separador {
+  background-color: white;
+  height: 3px;
 }
 
-.horarios438px h3 {
-  font-size: 12px;
-  color: white;
+.separador1 {
+  background-color: white;
+  height: 3px;
+  margin-top: 10px;
 }
 
+/* -----------FOOTER----------- */
 footer {
   background-color: #212529;
   height: 150px;
@@ -291,6 +309,7 @@ footer .redes ul li a:hover {
           filter: none;
 }
 
+/* -----------RESPONSIVE----------- */
 @media (max-width: 428px) {
   .horarios438px {
     display: none;
@@ -328,6 +347,9 @@ footer .redes ul li a:hover {
   .footer_textos {
     margin-left: 15px;
   }
+  .features {
+    height: 450px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -354,14 +376,28 @@ footer .redes ul li a:hover {
     gap: 0px 30px;
         grid-template-areas: "info_texto info_imagen";
   }
-  .info_imagen {
-    border-top: none;
-    border-left: white;
-    border-style: dashed;
+  .info .img_normal {
+    display: none;
+  }
+  .info .img_diagonal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
-body {
-  background-color: #212529;
+@media (max-width: 1023px) {
+  .info {
+    height: 1000px;
+  }
+  .info .img_normal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-top: 3px solid white;
+  }
+  .info .img_diagonal {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
