@@ -5,6 +5,16 @@ $colorFooterInstagram : #e4405f;
 $colorFooterTwitter : #55acee;
 $colorFooterYoutube : #bd081c;
 
+$separador: (
+    color: #fff,
+    alto: 3px,
+    margen: 10px,
+    );
+
+@mixin tamaño-horarios($h, $w) {
+    width: $h;
+    height: $w; 
+}
 
 ul{
     list-style: none;

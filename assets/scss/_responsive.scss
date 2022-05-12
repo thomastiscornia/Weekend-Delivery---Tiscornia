@@ -50,7 +50,10 @@
         gap: 0px 30px; 
         grid-template-areas: 
         "info_texto info_imagen";
-        .img_normal{
+        .img_normal {
+            display: none;
+        }
+        .img_normal_dos{
             display: none;
         }
         .img_diagonal{
@@ -61,12 +64,16 @@
 @media (max-width: 1023px){
     .info{
         height: 1000px;
-    .img_normal{
-        display: flex;
-        border-top: 3px solid white;
+        .img_normal{
+            display: flex;
+            border-top: 3px solid white;
+        }   
+        .img_normal_dos{
+            display: flex;
+            border-bottom: 3px solid white;
+        }
+        .img_diagonal{
+            display: none;
+        }
     }
-    .img_diagonal{
-        display: none;
-    }
-}
 }
