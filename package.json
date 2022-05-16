@@ -1,0 +1,34 @@
+{
+  "name": "proyecto_final",
+  "version": "1.0.0",
+  "description": "Weekend Delivery - Servicio de bebidas a domicilio, pedí tus combos de escabio y disfrutá! Los mejores precios, las mejores promociones.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss assets/scss/style.scss assets/css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomastiscornia/Weekend-Delivery---Tiscornia.git"
+  },
+  "keywords": [
+    "BEBIDAS",
+    "DELIVERY",
+    "ESCABIO",
+    "PEDIDO",
+    "BARATO",
+    "PROMOCION",
+    "RAPIDO",
+    "A DOMICILIO"
+  ],
+  "author": "Thomas Tiscornia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomastiscornia/Weekend-Delivery---Tiscornia/issues"
+  },
+  "homepage": "https://github.com/thomastiscornia/Weekend-Delivery---Tiscornia#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
