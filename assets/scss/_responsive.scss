@@ -1,24 +1,10 @@
 /* -----------RESPONSIVE----------- */
-@media (max-width: 428px){
-    .horarios438px{
-        display: none;
-    }
-}
 @media (min-width: 428px){
     .horarios{
         display: none;
     }
-    .horarios438px{
-        display: flex;
-    }
-    .tutorial_pasos img{
-        width: 390px;
-    }
 }
 @media (min-width: 768px){
-    .horarios438px h3{
-        font-size: 24px;
-    }
     footer{
         height: 100px;
         flex-direction: row;
@@ -26,9 +12,6 @@
     }
     .footer_textos{
         margin-left: 15px;
-    }
-    .features{
-        height: 450px;
     }
 }
 @media (min-width: 1024px){

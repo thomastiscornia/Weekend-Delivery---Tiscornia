@@ -1,11 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
 * {
   padding: 0;
   margin: 0;
 }
 
 body {
-  background-color: #212529;
+  background-color: #121618;
+  font-family: 'Poppins', sans-serif;
 }
 
 ul {
@@ -15,55 +16,65 @@ ul {
 }
 
 /* -----------INICIO----------- */
+.navbar {
+  background-color: #121618 !important;
+}
+
 .nav-link {
   color: white !important;
+  font-weight: 1000;
+  font-size: 18px;
 }
 
-#carouselInicioSlidesOnly {
-  margin-top: 75px;
-  max-height: 600px;
-  overflow: hidden;
+.nav-link:hover {
+  color: #40ffc1 !important;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
-.horarios, .horarios438px {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  background-color: #212529;
+.imagen-header {
   width: 100%;
-  height: 60px;
+  height: 650px;
+  background-image: url(../img/fiesta2.jpg);
+  background-repeat: no-repeat;
+  background-position: right 55% bottom 50%;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.horarios h2, .horarios438px h2 {
-  margin-top: 3px;
-  font-size: 15px;
-  color: white;
-}
-
-.horarios h3, .horarios438px h3 {
-  font-size: 11px;
-  color: white;
-}
-
-.horarios438px {
-  height: 40px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.horarios438px h3 {
-  font-size: 12px;
+.imagen-header .texto-header {
+  background-color: #1216187a;
+  border-radius: 15px;
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 5px #ffffff;
+          box-shadow: 0px 0px 5px #ffffff;
+}
+
+.imagen-header .texto-header:hover {
+  -webkit-box-shadow: 0px 0px 5px #40ffc1;
+          box-shadow: 0px 0px 5px #40ffc1;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.imagen-header .texto-header h2 {
   color: white;
+  font-weight: 500;
+  padding: 10px;
 }
 
 .tutorial_pregunta {
@@ -78,6 +89,10 @@ ul {
   text-align: center;
   padding: 10px;
   margin-top: 10px;
+}
+
+.tutorial_pregunta .tutorial_textos h2 {
+  font-weight: 1000;
 }
 
 .pasos {
@@ -114,7 +129,7 @@ ul {
   position: relative;
   min-width: 320px;
   height: 350px;
-  background-color: #212529;
+  background-color: #121618;
   border: 0;
 }
 
@@ -213,7 +228,7 @@ ul {
 }
 
 .features {
-  height: 1200px;
+  margin-top: 550px;
 }
 
 /* -----------CATALOGO----------- */
@@ -532,30 +547,13 @@ footer .redes ul li a:hover {
 }
 
 /* -----------RESPONSIVE----------- */
-@media (max-width: 428px) {
-  .horarios438px {
-    display: none;
-  }
-}
-
 @media (min-width: 428px) {
-  .horarios, .horarios438px {
+  .horarios {
     display: none;
-  }
-  .horarios438px {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .tutorial_pasos img {
-    width: 390px;
   }
 }
 
 @media (min-width: 768px) {
-  .horarios438px h3 {
-    font-size: 24px;
-  }
   footer {
     height: 100px;
     -webkit-box-orient: horizontal;
@@ -568,9 +566,6 @@ footer .redes ul li a:hover {
   }
   .footer_textos {
     margin-left: 15px;
-  }
-  .features {
-    height: 450px;
   }
 }
 

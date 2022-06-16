@@ -1,41 +1,43 @@
 /* -----------INICIO----------- */
+.navbar{
+    background-color: #121618 !important;
+}
 .nav-link{
-    color: white !important;
+    color: rgb(255, 255, 255) !important;
+    font-weight: 1000;
+    font-size: 18px;
+    &:hover{
+        color: #40ffc1 !important; 
+        transition: all .5s;
+    }
 }
 
-#carouselInicioSlidesOnly{
-    margin-top: 75px;
-    max-height: 600px;
+.imagen-header{
+    width: 100%;
+    height: 650px;
+    background-image: url(../img/fiesta2.jpg);
+    background-repeat: no-repeat;
+    background-position: right 55% bottom 50%;
     overflow: hidden;
-}
-
-.horarios{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background-color: $colorPrimario;
-    @include tamaño-horarios (100%, 60px);
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    h2{
-    margin-top: 3px;
-    font-size: 15px;
-    color: $colorPrimarioTextos;
-    }
-    h3{
-    font-size: 11px;
-    color: $colorPrimarioTextos;
-    }
-}
-
-.horarios438px{
-    @extend .horarios;
-    height: 40px;
+    flex-wrap: nowrap;
+    flex-direction: column;
     justify-content: center;
-    h3{
-    font-size: 12px;
-    color: $colorPrimarioTextos;
+    align-items: center;
+        .texto-header{
+            background-color: #1216187a;
+            border-radius: 15px;
+            padding: 10px;
+            box-shadow: 0px 0px 5px #ffffff;
+            &:hover{
+                box-shadow: 0px 0px 5px #40ffc1;
+                transition: all .5s;
+            }
+        h2{
+            color: white;
+            font-weight: 500;
+            padding: 10px;
+        }
     }
 }
 
@@ -46,6 +48,11 @@
     text-align: center;
     padding: 10px;
     margin-top: 10px;
+    .tutorial_textos{
+        h2{
+            font-weight: 1000;
+        }
+    }
 }
 
 .pasos {  
@@ -79,7 +86,7 @@
       position: relative;
       min-width: 320px;
       height: 350px; 
-      background-color: $colorPrimario;
+      background-color: #121618;
       border: 0;
     
       .box {
@@ -159,7 +166,7 @@
 }
   
 .features{
-    height: 1200px;
+    margin-top: 550px;
 }
 
 
