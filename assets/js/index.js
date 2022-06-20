@@ -13,7 +13,7 @@ class Bebidas {
         this.precio = precioBebida;
     }
     sumarIva (){
-        this.precio = this.precio * 1.21;
+        return (this.precio * 1.21);
     }
 }
 
