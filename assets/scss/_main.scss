@@ -370,14 +370,14 @@
 }
 
 /* -----------VARIOS----------- */
-.separador{
+.linea{
     background-color: map-get($separador, color);
     height: map-get($separador, alto);
+    width: 30px;
+    text-align: center;
 }
-.separador1{
-    background-color: map-get($separador, color);
-    height: map-get($separador, alto);
-    margin-top: map-get($separador, margen);
+.separador{
+    text-align: center;
 }
 
 /* -----------FOOTER----------- */

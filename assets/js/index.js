@@ -1,6 +1,6 @@
 // La idea es hacer un sistema para cargar el stock de la tienda.
 
-alert("Ingresaste al panel de administrador");
+/* alert("Ingresaste al panel de administrador");
 
 let bebida;
 let cantidadEnAlmacen;
@@ -41,4 +41,19 @@ function listarProductos() { //Utilizar esta funcion en consola
 
 function consultarStock(){
     alert("Actualmente, disponemos de un total de " + stock.length + " productos en stock ") ///Utilizar esta funcion en consola
+} */
+
+function cargarProductos() {
+    listadoBebidas.innerHTML = ""
+    for (const producto of productos) {
+        const li = document.createElement("li")
+            li.className = "collection-item blue-text"
+            li.innerText = producto
+            li.id = producto + "Prod"
+
+            li.addEventListener("click", ()=> { agregar(`${li.innerText}`) } )
+            listadoFrutas.append(li)
+    }
 }
+
+cargarProductos()
