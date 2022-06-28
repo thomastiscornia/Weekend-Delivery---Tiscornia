@@ -381,6 +381,50 @@ ul {
   display: flex;
 }
 
+/* -----------ADMIN----------- */
+div, form {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+form {
+  padding: 2em;
+}
+
+.color-formulario {
+  background-color: whitesmoke;
+}
+
+h1, h2 {
+  font-size: xx-large;
+}
+
+p, li {
+  font-size: 1.2em;
+}
+
+.collection-item {
+  line-height: 2em !important;
+}
+
+.color-stock {
+  background-color: aliceblue;
+}
+
+.stock {
+  border-color: whitesmoke;
+  padding: 5px;
+}
+
+.italica-stock {
+  font-style: italic;
+}
+
+.fondo-inputs {
+  background-color: aquamarine !important;
+}
+
 /* -----------FOOTER----------- */
 footer {
   background-color: #212529;

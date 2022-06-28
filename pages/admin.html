@@ -3,24 +3,25 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Weekend Delivey STOCK</title>
+    <title>Weekend Delivery Stock</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <script defer src="js/variables.js"></script>
-    <script defer src="js/main.js"></script>
+    <script defer src="../assets/js/variables.js"></script>
+    <script defer src="../assets/js/main.js"></script>
 </head>
 
 <body>
     <div class="center">
         <h1 id="titulo">TÍTULO</h1>
-        <p id="descrp">Descrp</p>
+        <p id="descrp">Descripcion</p>
+        <img class="responsive-img" src="images/0f7791_6ff6c66825114cf5ab51e49c0c9f76a8_mv2_d_3000_1998_s_2.jpg" width="50%">
     </div>
     <div>
-        <h2 class="center">Productos en stock</h2>
+        <h2 class="center">Bebidas</h2>
         <ul class="collection" id="listadoBebidas">
             <li class="collection-item">Producto 1</li>
             <li class="collection-item">Producto 2</li>
@@ -32,8 +33,19 @@
             <li class="collection-item">Producto 8</li>
         </ul>
     </div>
-    <script src="../assets/js/variables.js"></script>
-    <script src="../assets/js/index.js"></script>
+    <div class="center">
+        <h3 id="titulo">Stock</h3>
+    </div>
+    <div class="color-Stock Stock center">
+        <ul class="collection" id="listadoStock">
+            
+        </ul>
+        <a class="btn-floating btn-large blue white-text 
+z-depth-3 waves-effect waves-light" href="../checkout.html">
+            <i class="material-icons">shopping_cart</i>
+        </a>
+    </div>
+    <br>
 </body>
 
 </html>

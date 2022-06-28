@@ -51,9 +51,28 @@ function cargarProductos() {
             li.innerText = producto
             li.id = producto + "Prod"
 
-            li.addEventListener("click", ()=> { agregar(`${li.innerText}`) } )
-            listadoFrutas.append(li)
+            li.addEventListener("click", ()=> { agregarAlStock(`${li.innerText}`) } )
+            listadoBebidas.append(li)
     }
 }
 
 cargarProductos()
+
+function agregarAlStock(prod) {
+
+    if (prod.trim() !== "") {
+        Stock.push(prod)
+        const liNuevoProducto = document.createElement("li")
+            liNuevoProducto.className = "collection-item blue-text"
+            liNuevoProducto.innerText = prod
+            liNuevoProducto.id = prod + "EnStock"
+            liNuevoProducto.addEventListener("dblclick", ()=> { removerDelStock(`${liNuevoProducto.id}`) }) 
+            listadoStock.append(liNuevoProducto)
+    }
+}
+
+function removerDelStock(prod) {
+    const productoAremover = document.getElementById(`${prod}`)
+        productoAremover.remove()
+        console.warn(`${prod} ha sido eliminado del Stock.`)
+}
